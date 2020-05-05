@@ -1,0 +1,198 @@
+<html>
+<head>
+<title>script.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6897bb;}
+.s3 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+script.js</font>
+</center></td></tr></table>
+<pre><span class="s0">function </span><span class="s1">countEvens(arr){</span>
+    <span class="s0">var </span><span class="s1">even = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i = </span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt; arr.length</span><span class="s0">; </span><span class="s1">i++){</span>
+        <span class="s0">if</span><span class="s1">(arr[i] % </span><span class="s2">2 </span><span class="s1">== </span><span class="s2">0</span><span class="s1">){</span>
+            <span class="s1">even += </span><span class="s2">1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">return </span><span class="s1">even</span><span class="s0">;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">countHi(str){</span>
+
+    <span class="s0">var </span><span class="s1">hi = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i = </span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt; str.length</span><span class="s0">; </span><span class="s1">i++){</span>
+        <span class="s0">if</span><span class="s1">(str.substring(i</span><span class="s0">, </span><span class="s1">i+</span><span class="s2">2</span><span class="s1">) == </span><span class="s3">&quot;hi&quot;</span><span class="s1">){</span>
+            <span class="s1">hi += </span><span class="s2">1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">return </span><span class="s1">hi</span><span class="s0">;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">no14(arr){</span>
+
+    <span class="s0">var </span><span class="s1">ones = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">var </span><span class="s1">fours = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i = </span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt; arr.length</span><span class="s0">; </span><span class="s1">i++) {</span>
+        <span class="s0">if </span><span class="s1">(arr[i] == </span><span class="s2">1</span><span class="s1">) {</span>
+            <span class="s1">ones += </span><span class="s2">1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s0">if </span><span class="s1">(arr[i] == </span><span class="s2">4</span><span class="s1">) {</span>
+            <span class="s1">fours += </span><span class="s2">1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(ones != </span><span class="s2">0 </span><span class="s1">&amp;&amp; fours != </span><span class="s2">0</span><span class="s1">){</span>
+        <span class="s0">return false;</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(ones != </span><span class="s2">0 </span><span class="s1">&amp;&amp; fours == </span><span class="s2">0</span><span class="s1">){</span>
+        <span class="s0">return true;</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(ones == </span><span class="s2">0 </span><span class="s1">&amp;&amp; fours != </span><span class="s2">0</span><span class="s1">){</span>
+        <span class="s0">return true;</span>
+    <span class="s1">}</span>
+    <span class="s0">return true;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">either24 (arr){</span>
+
+    <span class="s0">var </span><span class="s1">two = </span><span class="s0">false;</span>
+    <span class="s0">var </span><span class="s1">four = </span><span class="s0">false;</span>
+
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i = </span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt; arr.length</span><span class="s0">; </span><span class="s1">i++){</span>
+        <span class="s0">if</span><span class="s1">(arr[i] == </span><span class="s2">2 </span><span class="s1">&amp;&amp; arr[i+</span><span class="s2">1</span><span class="s1">] == </span><span class="s2">2</span><span class="s1">){</span>
+            <span class="s1">two = </span><span class="s0">true;</span>
+        <span class="s1">}</span>
+        <span class="s0">if</span><span class="s1">(arr[i] == </span><span class="s2">4 </span><span class="s1">&amp;&amp; arr [i+</span><span class="s2">1</span><span class="s1">] == </span><span class="s2">4</span><span class="s1">){</span>
+            <span class="s1">four = </span><span class="s0">true;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(two == four){</span>
+        <span class="s0">return false;</span>
+    <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+        <span class="s0">return true;</span>
+    <span class="s1">}</span>
+
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">makeChocolate(int1</span><span class="s0">, </span><span class="s1">int2</span><span class="s0">, </span><span class="s1">int3){</span>
+    <span class="s0">var </span><span class="s1">choc = </span><span class="s2">5 </span><span class="s1">* int2</span><span class="s0">;</span>
+    <span class="s0">if</span><span class="s1">(int3 - choc &lt;= int1){</span>
+        <span class="s0">if</span><span class="s1">(int3-choc &gt;=</span><span class="s2">0</span><span class="s1">){</span>
+            <span class="s0">return </span><span class="s1">int3-choc</span><span class="s0">;</span>
+        <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+            <span class="s0">if</span><span class="s1">(int3%</span><span class="s2">5</span><span class="s1">&lt;=int1){</span>
+                <span class="s0">return </span><span class="s1">int3%</span><span class="s2">5</span><span class="s0">;</span>
+            <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+                <span class="s0">return </span><span class="s1">-</span><span class="s2">1</span><span class="s0">;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+        <span class="s0">return </span><span class="s1">-</span><span class="s2">1</span><span class="s0">;</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">luckySum(int1</span><span class="s0">,</span><span class="s1">int2</span><span class="s0">,</span><span class="s1">int3){</span>
+    <span class="s0">if</span><span class="s1">(int1==</span><span class="s2">13</span><span class="s1">){</span>
+        <span class="s1">int1=</span><span class="s2">0</span><span class="s0">;</span>
+        <span class="s1">int2=</span><span class="s2">0</span><span class="s0">;</span>
+        <span class="s1">int3=</span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(int2==</span><span class="s2">13</span><span class="s1">){</span>
+        <span class="s1">int2=</span><span class="s2">0</span><span class="s0">;</span>
+        <span class="s1">int3=</span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">if</span><span class="s1">(int3==</span><span class="s2">13</span><span class="s1">){</span>
+        <span class="s1">int3=</span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">return </span><span class="s1">int1+int2+int3</span><span class="s0">;</span>
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">maxBlock(str){</span>
+    <span class="s0">var </span><span class="s1">block = </span><span class="s3">&quot;&quot;</span><span class="s0">;</span>
+    <span class="s0">var </span><span class="s1">a = </span><span class="s2">1</span><span class="s0">;</span>
+    <span class="s0">var </span><span class="s1">b = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i=</span><span class="s2">0</span><span class="s0">; </span><span class="s1">i&lt;str.length</span><span class="s0">; </span><span class="s1">i++){</span>
+        <span class="s1">block = str.substring(i</span><span class="s0">,</span><span class="s1">i+</span><span class="s2">1</span><span class="s1">)</span><span class="s0">;</span>
+        <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">j=i+</span><span class="s2">1</span><span class="s0">; </span><span class="s1">i &lt; str.length</span><span class="s0">; </span><span class="s1">j++){</span>
+            <span class="s0">if</span><span class="s1">(str.substring(j</span><span class="s0">,</span><span class="s1">j+</span><span class="s2">1</span><span class="s1">) == block){</span>
+                <span class="s1">a=a+</span><span class="s2">1</span><span class="s0">;</span>
+            <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+                <span class="s0">break;</span>
+            <span class="s1">}</span>
+        <span class="s1">}</span>
+        <span class="s0">if</span><span class="s1">(a&gt;b){</span>
+            <span class="s1">b=a</span><span class="s0">;</span>
+        <span class="s1">}</span>
+        <span class="s1">a = </span><span class="s2">1</span><span class="s0">;</span>
+    <span class="s1">}</span>
+    <span class="s0">return </span><span class="s1">b</span><span class="s0">;</span>
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">linearIn(arr1</span><span class="s0">,</span><span class="s1">arr2){</span>
+    <span class="s0">var </span><span class="s1">varr1 = </span><span class="s2">0</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i=</span><span class="s2">0</span><span class="s0">;</span><span class="s1">i&lt;=arr1.length</span><span class="s0">;</span><span class="s1">i++){</span>
+        <span class="s0">if</span><span class="s1">(arr1[i]==arr2[varr1]){</span>
+            <span class="s1">varr1=varr1+</span><span class="s2">1</span>
+        <span class="s1">}</span>
+        <span class="s0">if</span><span class="s1">(varr1==arr2.length+</span><span class="s2">1</span><span class="s1">){</span>
+            <span class="s0">return true;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">return false;</span>
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">countTriple(str) {</span>
+
+    <span class="s0">var </span><span class="s1">end = -</span><span class="s2">1</span><span class="s0">;</span>
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i=</span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt;= str.length</span><span class="s0">;</span><span class="s1">i++){</span>
+        <span class="s0">if</span><span class="s1">(str.substring(i</span><span class="s0">,</span><span class="s1">i+</span><span class="s2">1</span><span class="s1">) == str.substring(i+</span><span class="s2">1</span><span class="s0">,</span><span class="s1">i+</span><span class="s2">2</span><span class="s1">) &amp;&amp; str.substring(i+</span><span class="s2">1</span><span class="s0">,</span><span class="s1">i+</span><span class="s2">2</span><span class="s1">) == str.substring(i+</span><span class="s2">2</span><span class="s0">,</span><span class="s1">i+</span><span class="s2">3</span><span class="s1">)){</span>
+            <span class="s1">end = end+</span><span class="s2">1</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+    <span class="s0">return </span><span class="s1">end</span><span class="s0">;</span>
+
+<span class="s1">}</span>
+
+<span class="s0">function </span><span class="s1">sameEnds(str) {</span>
+
+    <span class="s0">var </span><span class="s1">end = </span><span class="s3">&quot;&quot;</span><span class="s0">;</span>
+
+    <span class="s0">for</span><span class="s1">(</span><span class="s0">var </span><span class="s1">i = </span><span class="s2">0</span><span class="s0">; </span><span class="s1">i &lt; str.length</span><span class="s0">; </span><span class="s1">i++){</span>
+        <span class="s0">if </span><span class="s1">(str.substring(</span><span class="s2">0</span><span class="s0">, </span><span class="s1">i) == str.substring(str.length - i</span><span class="s0">, </span><span class="s1">str.length) &amp;&amp; i &lt;= str.length-i) {</span>
+            <span class="s1">end = str.substring(</span><span class="s2">0</span><span class="s0">, </span><span class="s1">i)</span><span class="s0">;</span>
+        <span class="s1">}</span>
+    <span class="s1">}</span>
+
+    <span class="s0">return </span><span class="s1">end</span><span class="s0">;</span>
+<span class="s1">}</span>
+
+
+
+
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += countEvens(</span><span class="s2">3</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += countHi( </span><span class="s3">&quot;adafhi&quot;</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += no14( </span><span class="s2">3</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s0">,</span><span class="s2">1</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += either24( </span><span class="s2">3</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">2</span><span class="s0">,</span><span class="s2">1</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += makeChocolate( </span><span class="s2">3</span><span class="s0">,</span><span class="s2">4</span><span class="s0">,</span><span class="s2">3</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += luckySum( </span><span class="s2">3</span><span class="s0">, </span><span class="s2">2</span><span class="s0">, </span><span class="s2">1 </span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += maxBlock(</span><span class="s3">&quot;hoopla&quot;</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += linearIn(</span><span class="s2">3</span><span class="s0">,</span><span class="s2">3</span><span class="s0">,</span><span class="s2">5</span><span class="s0">,</span><span class="s2">5</span><span class="s0">,</span><span class="s2">10</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += countTriple(</span><span class="s3">&quot;XXXafXXX&quot;</span><span class="s1">)</span><span class="s0">;</span>
+<span class="s1">document.getElementById(</span><span class="s3">&quot;output&quot;</span><span class="s1">).innerHTML += sameEnds(</span><span class="s3">&quot;hiadksljfhi&quot;</span><span class="s1">)</span><span class="s0">;</span>
+
+
+
+
+</pre>
+</body>
+</html>
